@@ -12,7 +12,7 @@ app.use(cookieParser())
 await connectToDB()
 const app = express()
 
-app.use(cors({ path: "https://task-manager-32j5.onrender.com/" }))
+app.use(cors({ path: "https://task-manager-p19y.onrender.com/" }))
 
 app.use(express.json())
 
