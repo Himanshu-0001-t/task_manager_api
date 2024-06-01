@@ -8,10 +8,10 @@ import userRouter from './src/routes/user.js'
 import taskRouter from './src/routes/task.js'
 
 dotenv.config()
-app.use(cookieParser())
 await connectToDB()
 const app = express()
 
+app.use(cookieParser())
 app.use(cors({ path: "https://task-manager-p19y.onrender.com/" }))
 
 app.use(express.json())
