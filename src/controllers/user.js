@@ -77,7 +77,7 @@ export const signin = async (req, res) => {
             maxAge: 360000 * 60 * 60
         }
 
-        res.cookie("_manager_auth", token, option)
+        return res.cookie("_manager_auth", token, option)
             .json({ success: true, message: "User signIn successfully" })
             .status(200)
 
